@@ -1,0 +1,394 @@
+# Copyright (C) 2024 WooCommerce
+# This file is distributed under the same license as the WooCommerce singpay Gateway package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce singpay Gateway 1.6.5\n"
+"Report-Msgid-Bugs-To: "
+"https://wordpress.org/support/plugin/woocommerce-gateway-singpay\n"
+"POT-Creation-Date: 2024-05-14 15:30:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2024-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: node-wp-i18n 1.2.6\n"
+
+#: includes/class-wc-gateway-singpay-privacy.php:20
+#: includes/class-wc-gateway-singpay.php:121
+#: includes/class-wc-gateway-singpay.php:239
+#: includes/class-wc-gateway-singpay.php:374
+msgid "Singpay"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay-privacy.php:22
+msgid "WooCommerce Singpay Order Data"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay-privacy.php:25
+msgid "WooCommerce Singpay Subscriptions Data"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay-privacy.php:28
+msgid "WooCommerce Singpay Data"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay-privacy.php:65
+#. translators: 1: anchor tag 2: closing anchor tag
+msgid ""
+"By using this extension, you may be storing personal data or sharing data "
+"with an external service. %1$sLearn more about how this works, including "
+"what you may want to include in your privacy policy.%2$s"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay-privacy.php:92
+msgid "Orders"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay-privacy.php:96
+msgid "Singpay token"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay-privacy.php:154
+msgid "Subscriptions"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay-privacy.php:158
+msgid "Singpay subscription token"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay-privacy.php:253
+#. translators: %d: Order ID
+msgid "Order ID %d contains an active Subscription"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay-privacy.php:270
+msgid "Singpay Subscriptions Data Erased."
+msgstr ""
+
+#: includes/class-wc-gateway-singpay-privacy.php:291
+msgid "Singpay Order Data Erased."
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:123
+#. translators: 1: a href link 2: closing href
+msgid ""
+"Singpay works by sending the user to %1$sPayfast%2$s to enter their payment "
+"information."
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:228
+msgid "Enable/Disable"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:229
+msgid "Enable Payfast"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:231
+msgid "This controls whether or not this gateway is enabled within WooCommerce."
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:236
+msgid "Title"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:238
+msgid "This controls the title which the user sees during checkout."
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:243
+msgid "Description"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:245
+msgid "This controls the description which the user sees during checkout."
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:250
+msgid "Singpay Sandbox"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:252
+msgid "Place the payment gateway in development mode."
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:256
+msgid "Merchant ID"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:258
+msgid "This is the merchant ID, received from Payfast."
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:262
+msgid "Merchant Key"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:264
+msgid "This is the merchant key, received from Payfast."
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:268
+msgid "Passphrase"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:270
+msgid "* Required. Needed to ensure the data passed through is secure."
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:274
+msgid "Send Debug Emails"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:276
+msgid ""
+"Send debug e-mails for transactions through the Singpay gateway (sends on "
+"successful transaction as well)."
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:280
+msgid "Who Receives Debug E-mails?"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:282
+msgid ""
+"The e-mail address to which debugging error e-mails are sent when in test "
+"mode."
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:286
+msgid "Enable Logging"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:288
+msgid "Enable transaction logging for gateway."
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:322
+msgid "Sandbox Merchant ID currently in use"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:323
+msgid "Sandbox Merchant Key currently in use"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:377
+msgid "Gateway Disabled"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:380
+#. translators: 1: a href link 2: closing href
+msgid ""
+"Choose South African Rands as your store currency in %1$sGeneral "
+"Settings%2$s to enable the Singpay Gateway."
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:418
+#. translators: 1: blog info name
+msgid "New order from %s"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:498
+msgid "Pay via Payfast"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:504
+msgid "Cancel order &amp; restore cart"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:533
+msgid ""
+"Thank you for your order. We are now redirecting you to Singpay to make "
+"payment."
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:594
+msgid "Thank you for your order, please click the button below to pay with Payfast."
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:891
+msgid "Merchant cancelled subscription on Payfast."
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:909
+msgid "ITN payment completed"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:972
+#: includes/class-wc-gateway-singpay.php:1004
+#. translators: 1: payment status
+msgid "Payment %s via ITN."
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:1190
+#. translators: 1: error code 2: error message
+msgid "Singpay Subscription renewal transaction failed (%1$s:%2$s)"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:1193
+msgid "Singpay Subscription renewal transaction submitted."
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:1282
+msgid "Can not submit Singpay request with an empty token"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:1468
+msgid "Amount mismatch"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:1469
+msgid "Bad access of page"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:1470
+msgid "Bad source IP address"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:1471
+msgid "Failed to connect to Payfast"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:1472
+msgid "Security signature mismatch"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:1473
+msgid "Merchant ID mismatch"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:1474
+msgid "No saved session found for ITN transaction"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:1475
+msgid "Order ID not present in URL"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:1476
+msgid "Order ID mismatch"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:1477
+msgid "This order ID is invalid"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:1478
+msgid "Order Number mismatch"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:1479
+msgid "This order has already been processed"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:1480
+msgid "PDT query failed"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:1481
+msgid "PDT token not present in URL"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:1482
+msgid "Session ID mismatch"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:1483
+msgid "Unkown error occurred"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:1486
+msgid "Payment was successful"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:1487
+msgid "Payment has failed"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:1488
+msgid ""
+"The payment is pending. Please note, you will receive another Instant "
+"Transaction Notification when the payment status changes to \"Completed\", "
+"or \"Failed\""
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:1681
+msgid "Your store uses a currency that Singpay doesn't support yet."
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:1683
+msgid "You forgot to fill your merchant ID."
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:1685
+msgid "You forgot to fill your merchant key."
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:1687
+msgid "Singpay requires a passphrase to work."
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:1716
+msgid "To use Singpay as a payment provider, you need to fix the problems below:"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:1749
+msgid "This represents the fee Singpay collects for the transaction."
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:1750
+msgid "Singpay Fee:"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:1779
+msgid "This represents the net total that was credited to your Singpay account."
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:1780
+msgid "Amount Net:"
+msgstr ""
+
+#: woocommerce-gateway-singpay.php:62
+msgid "Settings"
+msgstr ""
+
+#: woocommerce-gateway-singpay.php:63
+msgid "Support"
+msgstr ""
+
+#: woocommerce-gateway-singpay.php:64
+msgid "Docs"
+msgstr ""
+
+#: woocommerce-gateway-singpay.php:142
+#. translators: %s WooCommerce download URL link.
+msgid ""
+"WooCommerce Singpay Gateway requires WooCommerce to be installed and "
+"active. You can download %s here."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "WooCommerce Singpay Gateway"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://woocommerce.com/products/singpay-payment-gateway/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Receive payments using the South African Singpay payments provider."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "WooCommerce"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://woocommerce.com/"
+msgstr ""
+
+#: includes/class-wc-gateway-singpay.php:414
+msgctxt "hash before order number"
+msgid "#"
+msgstr ""
