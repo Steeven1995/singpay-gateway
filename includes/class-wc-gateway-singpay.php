@@ -36,6 +36,13 @@ class WC_Gateway_SingPay extends WC_Payment_Gateway {
      */
     protected $x_client_id;
 
+     /**
+     * Disbursement ID.
+     *
+     * @var string $disbursement_id
+     */
+    protected $disbursement_id;
+
     /**
      * Merchant Key.
      *
@@ -134,6 +141,7 @@ class WC_Gateway_SingPay extends WC_Payment_Gateway {
         $this->x_client_id      = $this->get_option( 'x_client_id' );
         $this->x_client_secret     = $this->get_option( 'x_client_secret' );
         $this->x_wallet      = $this->get_option( 'x_wallet' );
+        $this->disbursement_id = $this->get_option('disbursement_id');
         $this->url              = 'https://gateway.singpay.ga/v1/ext';
         $this->validate_url     = 'https://gateway.singpay.ga/v1';
         $this->title            = $this->get_option( 'title' );
@@ -308,6 +316,12 @@ class WC_Gateway_SingPay extends WC_Payment_Gateway {
                 'description' => __( '* Required. Needed to ensure the data passed through is secure.', 'woocommerce-gateway-singpay' ),
                 'default'     => '',
             ),
+            'disbursement_id'      => array(
+                'title'       => __( 'Disbursement_id ID', 'woocommerce-gateway-singpay' ),
+                'type'        => 'text',
+                'description' => __( '* Required. Needed to ensure the data passed through is secure.', 'woocommerce-gateway-singpay' ),
+                'default'     => '',
+            ),
         );
     }
 
@@ -321,6 +335,7 @@ class WC_Gateway_SingPay extends WC_Payment_Gateway {
             'x_client_id',
             'x_client_secret',
             'x_wallet',
+            'disbursement_id'
         );
     }
 
@@ -330,7 +345,7 @@ class WC_Gateway_SingPay extends WC_Payment_Gateway {
      * @return bool
      */
     public function needs_setup() {
-        return ! $this->get_option( 'x_client_id' ) || ! $this->get_option( 'x_client_secret' ) || ! $this->get_option( 'x_wallet' );
+        return ! $this->get_option( 'x_client_id' ) || ! $this->get_option( 'x_client_secret' ) || ! $this->get_option( 'x_wallet' ) ||  $this->get_option( 'disbursement_id' );
     }
 
     /**
@@ -360,6 +375,8 @@ class WC_Gateway_SingPay extends WC_Payment_Gateway {
             'yes' !== $this->get_option( 'testmode' ) && empty( $this->get_option( 'x_client_secret' ) ) ? 'wc-gateway-singpay-error-missing-client-key' : null,
             // Check if user entered a pass phrase.
             'yes' !== $this->get_option( 'testmode' ) && empty( $this->get_option( 'x_wallet' ) ) ? 'wc-gateway-singpay-error-missing-wallet' : null,
+            // Check if user entered a pass phrase.
+            'yes' !== $this->get_option( 'testmode' ) && empty( $this->get_option( 'disbursement_id' ) ) ? 'wc-gateway-singpay-error-missing-disbursement' : null,
         );
 
         return array_filter( $errors );
@@ -445,7 +462,7 @@ class WC_Gateway_SingPay extends WC_Payment_Gateway {
 			'redirect_success' => $this->get_return_url( $order ),
 			'redirect_error'   => $order->get_cancel_order_url(),
 			'amount'           => $order->get_total(),
-			'disbursement'     => '',
+			'disbursement'     => $this->disbursement_id,
 			'logoURL'          => '', // Ajoutez votre URL de logo ici
 			'isTransfer'       => false,
 		);
